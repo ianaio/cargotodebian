@@ -1,0 +1,4 @@
+if [ -d /run/systemd/system ]; then
+	deb-systemd-invoke stop #UNITFILES# >/dev/null || true
+fi
+
