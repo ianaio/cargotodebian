@@ -123,10 +123,10 @@ total 28
 drwxr-xr-x 2 ximon ximon 4096 aug 19 12:31 .
 drwxrwxr-x 6 ximon ximon 4096 aug 19 12:31 ..
 -rw-r--r-- 1 ximon ximon  249 aug 19 12:28 control
--rw-r--r-- 1 ximon ximon  185 aug 19 12:28 md5sums
--rwxr-xr-x 1 ximon ximon 1211 aug 19 12:28 postinst
--rwxr-xr-x 1 ximon ximon  599 aug 19 12:28 postrm
--rwxr-xr-x 1 ximon ximon  206 aug 19 12:28 prerm
+-rw-r--r-- 1 ianaio ianaio  185 aug 19 12:28 md5sums
+-rwxr-xr-x 1 ianaio ianaio 1211 aug 19 12:28 postinst
+-rwxr-xr-x 1 ianaio ianaio  599 aug 19 12:28 postrm
+-rwxr-xr-x 1 ianaio ianaio  206 aug 19 12:28 prerm
 ```
 
 Inspect one of the generated maintainer scripts:
