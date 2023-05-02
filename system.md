@@ -120,9 +120,9 @@ Use `dpkg` to inspect the created archives maintainer scripts:
 $ dpkg -e target/debian/example_1.2.3_amd64.deb deb_out
 $ ls -la deb_out/
 total 28
-drwxr-xr-x 2 ximon ximon 4096 aug 19 12:31 .
-drwxrwxr-x 6 ximon ximon 4096 aug 19 12:31 ..
--rw-r--r-- 1 ximon ximon  249 aug 19 12:28 control
+drwxr-xr-x 2 ianaio ianaio 4096 aug 19 12:31 .
+drwxrwxr-x 6 ianaio ianaio 4096 aug 19 12:31 ..
+-rw-r--r-- 1 ianaio ianaio  249 aug 19 12:28 control
 -rw-r--r-- 1 ianaio ianaio  185 aug 19 12:28 md5sums
 -rwxr-xr-x 1 ianaio ianaio 1211 aug 19 12:28 postinst
 -rwxr-xr-x 1 ianaio ianaio  599 aug 19 12:28 postrm
