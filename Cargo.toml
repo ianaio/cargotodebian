@@ -28,7 +28,7 @@ assets = [
 ]
 
 [lib]
-name = "cargo-todebian"
+name = "cargotodebian"
 path = "src/lib.rs"
 doc = true
 
