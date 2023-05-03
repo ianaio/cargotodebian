@@ -17,10 +17,10 @@ fn main() {
   File::create(out_path.join("6.txt")).and_then(|mut f| f.write_all(b"Hello generated asset 2")).expect("Could not write asset file");
 
   if cfg!(feature = "example_non_debian_build") {
-    panic!("Detected this example isn't built via cargo-deb, because example_non_debian_build feature is on. Build with --no-default-features");
+    panic!("Detected this example isn't built via cargotodebian, because example_non_debian_build feature is on. Build with --no-default-features");
   }
   if !cfg!(feature = "example_debian_build") {
-    panic!("Detected this example isn't built via cargo-deb, because example_debian_build feature is off. Build with --features=example_debian_build");
+    panic!("Detected this example isn't built via cargotodebian, because example_debian_build feature is off. Build with --features=example_debian_build");
   }
 }
 

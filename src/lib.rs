@@ -6,10 +6,10 @@
 
 If you only want to make some `*.deb` files, and you're not a developer of tools
 for Debian packaging, **[see `cargo deb` command usage described in the
-README instead](https://github.com/mmstick/cargo-deb#readme)**.
+README instead](https://github.com/mmstick/cargotodebian#readme)**.
 
 ```sh
-cargo install cargo-deb
+cargo install cargotodebian
 cargo deb # run this in your Cargo project directory
 ```
 
@@ -69,7 +69,7 @@ pub fn reset_deb_temp_directory(options: &Config) -> io::Result<()> {
     let deb_dir = options.default_deb_output_dir();
     let deb_temp_dir = options.deb_temp_dir();
     remove_deb_temp_directory(options);
-    // For backwards compatibility with previous cargo-deb behavior, also delete .deb from target/debian,
+    // For backwards compatibility with previous cargotodebian behavior, also delete .deb from target/debian,
     // but this time only debs from other versions of the same package
     let g = deb_dir.join(DebArchive::filename_glob(options));
     if let Ok(old_files) = glob::glob(g.to_str().expect("utf8 path")) {

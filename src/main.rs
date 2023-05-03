@@ -38,7 +38,7 @@ fn main() {
     cli_opts.optflag("q", "quiet", "Don't print warnings");
     cli_opts.optflag("v", "verbose", "Print progress");
     cli_opts.optflag("h", "help", "Print this help menu");
-    cli_opts.optflag("", "version", "Show the version of cargo-deb");
+    cli_opts.optflag("", "version", "Show the version of cargotodebian");
     cli_opts.optopt("", "deb-version", "Alternate version string for package", "version");
 
     let matches = match cli_opts.parse(&args[1..]) {
@@ -93,7 +93,7 @@ fn err_cause(err: &dyn std::error::Error, max: usize) {
 }
 
 fn err_exit(err: &dyn std::error::Error) -> ! {
-    eprintln!("cargo-deb: {}", err);
+    eprintln!("cargotodebian: {}", err);
     err_cause(err, 3);
     process::exit(1);
 }
